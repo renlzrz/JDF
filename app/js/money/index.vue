@@ -6,7 +6,8 @@
         <Money></Money>
         <Adb></Adb>
         <Finance></Finance>
-        <Footer></Footer>
+        <Adc></Adc>
+        <Footer cname="mfooter"></Footer>
         <Navbar></Navbar>
 
     </div>
@@ -19,6 +20,7 @@
     import Money from "./money"
     import Adb from "./adb"
     import Finance from "./finance"
+    import Adc from "./adc"
     import Footer from "../public/footer"
     import Navbar from "../public/navbar"
     export default {
@@ -29,13 +31,21 @@
             Navbar,
             Ada,
             Adb,
+            Adc,
             Money,
             Finance
         }
     }
 </script>
 
-<style lang="scss">
-    @import '../../css/reset.scss';
+<style lang="scss" scoped>
+    .mfooter {
+        margin-top: 0 !important;
+        ul {
+            li:first-child {
+                display: none;
+            }
+        }
+    }
 
 </style>
