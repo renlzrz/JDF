@@ -40,7 +40,6 @@
         },
     }
 </script>
-
 <style lang="scss" module>
     @import "../../css/element.scss";
     .panel{
