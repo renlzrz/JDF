@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
     <div>
         <Header></Header>
         <Slider></Slider>
