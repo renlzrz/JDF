@@ -5,6 +5,10 @@
         <Novice></Novice>
         <Borrow></Borrow>
         <Money></Money>
+        <Product></Product>
+        <Live></Live>
+        <Footer></Footer>
+        <Navbar></Navbar>
     </div>
 </template>
 
@@ -14,13 +18,21 @@
     import Novice from "./novice"
     import Borrow from "./borrow"
     import Money from "./money"
+    import Product from "./product"
+    import Live from "./life"
+    import Footer from "../public/footer"
+    import Navbar from "../public/navbar"
     export default {
             components: {
                 Header,
                 Slider,
                 Novice,
                 Borrow,
-                Money
+                Money,
+                Product,
+                Live,
+                Footer,
+                Navbar
             }
     }
 </script>
