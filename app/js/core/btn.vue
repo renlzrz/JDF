@@ -1,13 +1,11 @@
 <template>
     <div :class="[btnClass,cname]">
-        <slot></slot>
-
+        <slot/>
     </div>
 </template>
 
 <script>
     export default {
-        name: "btn",
         props: {
           cname: {
               type: String,
@@ -22,12 +20,10 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @import "../../css/element.scss";
     .btn {
         @include btn;
     }
-
-
 
 </style>
