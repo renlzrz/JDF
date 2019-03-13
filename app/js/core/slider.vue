@@ -2,13 +2,13 @@
     <section :class="cname" >
         <swiper :options="options" :not-next-tick="options.notNextTick">
             <!-- slides -->
-            <swiper-slide v-for="item in items" :key="item.href">
+            <swiper-slide v-for="item in items" :key="item.index">
                 <router-link :to="{name: item.href}">
                     <img :src="item.src" alt="">
                 </router-link>
             </swiper-slide>
             <!-- Optional controls -->
-            <div class="swiper-pagination"  v-if="options.pagination"></div>
+            <div class="swiper-pagination"  v-if="options.pagination" slot="pagination"></div>
 
         </swiper>
     </section>
@@ -17,12 +17,15 @@
 <script>
     import {swiper,swiperSlide} from "vue-awesome-swiper"
     export default {
-        name: "slider",
-        comments: {
+        components: {
             swiper,
             swiperSlide
         },
         props: {
+            cname:{
+                type: String,
+                default: ""
+            },
             options: {
                 type:Object,
                 default() {
@@ -39,21 +42,13 @@
             items: {
                 type:Array,
                 default() {
-                    return [{href:'',src:''}];
+                    return [];
                 }
 
             }
 
-        },
-        data() {
-            return {
-                swiperOption: {
-                    // some swiper options/callbacks
-                    // 所有的参数同 swiper 官方 api 参数
-                    // ...
-                }
-            }
-        },
+        }
+
     }
 </script>
 
