@@ -18,7 +18,7 @@
                     <p>电脑版</p>
                 </div>
             </li>
-            <li>Copyright © 2004-2017 京东JD.com 版权所有</li>
+            <li>Copyright © 2004-2019 京东JD.com 版权所有</li>
             <li>投资有风险，购买需谨慎</li>
             <li>京东金融平台服务协议</li>
             <li>京东金融隐私政策</li>

@@ -16,7 +16,7 @@
         components: {
             Panel,
             swiper,
-            swiperSlide,
+            swiperSlide
         },
         data() {
             return {
